@@ -1,0 +1,105 @@
+/* Scrollbar style for Chrome */
+
+/* Track */
+::-webkit-scrollbar
+{
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track
+{
+  background: #303030;
+  border: solid 2px rgba(33,33,33,0.5);
+}
+
+
+/* Thumb */
+::-webkit-scrollbar-thumb
+{
+  background: #505050;
+}
+
+::-webkit-scrollbar-thumb:hover
+{
+  background: #606060;
+}
+
+::-webkit-scrollbar-thumb:active
+{
+  background: #505050;
+}
+
+::-webkit-scrollbar-thumb:vertical
+{
+  border-top: solid 2px rgba(33,33,33,0.5);
+  border-bottom: solid 2px rgba(33,33,33,0.5);
+}
+
+::-webkit-scrollbar-thumb:horizontal
+{
+  border-right: solid 2px rgba(33,33,33,0.5);
+  border-left: solid 2px rgba(33,33,33,0.5);
+}
+
+
+/* Buttons */
+::-webkit-scrollbar-button
+{
+  border-style: solid;
+  height: 10px;
+  width: 10px;
+  background: #212121;
+}
+
+
+/* Up */
+::-webkit-scrollbar-button:vertical:decrement
+{
+  border-width: 0 5px 10px 5px;
+  border-color: transparent transparent #505050 transparent;
+}
+
+::-webkit-scrollbar-button:vertical:decrement:hover
+{
+  border-color: transparent transparent #606060 transparent;
+}
+
+
+/* Down */
+::-webkit-scrollbar-button:vertical:increment
+{
+  border-width: 10px 5px 0 5px;
+  border-color: #505050 transparent transparent transparent;
+}
+
+::-webkit-scrollbar-button:vertical:increment:hover
+{
+  border-color: #606060 transparent transparent transparent;
+}
+
+
+/* Left */
+::-webkit-scrollbar-button:horizontal:decrement
+{
+  border-width: 5px 10px 5px 0;
+  border-color: transparent #505050 transparent transparent;
+}
+
+::-webkit-scrollbar-button:horizontal:decrement:hover
+{
+  border-color: transparent #606060 transparent transparent;
+}
+
+
+/* Right */
+::-webkit-scrollbar-button:horizontal:increment
+{
+  border-width: 5px 0 5px 10px;
+  border-color: transparent transparent transparent #505050;
+}
+
+::-webkit-scrollbar-button:horizontal:increment:hover
+{
+  border-color: transparent transparent transparent #606060;
+}

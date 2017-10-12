@@ -1,0 +1,147 @@
+/* http://jsbin.com/cewodehi/6/edit?html,css,js,output */
+$font-size: 16px;
+$h1: #666;
+$h2: #666;
+$h3: #666;
+$h4: #666;
+$h5: #666;
+$h6: #666;
+$p: #666;
+$small: #666;
+
+h1, h2, h3, h4, h5, h6
+{
+  margin: 2em 0 1em 0;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+h2
+{
+  margin: 2.2em 0 0.8em 0;
+  font-size: 1.5em;
+  border-bottom: 1px solid;
+
+  &::first-letter {
+    font-size: 1.25em;
+  }
+}
+
+h3 {
+  margin: 1.5em 0 0.3em 0;
+  font-size: 1.35em;
+
+  &::first-letter {
+    font-size: 1.25em;
+  }
+}
+
+p {
+  margin-bottom: 0.75em;
+  font-family: 'Roboto', 'Times New Roman', Times, serif;
+  text-align: justify;
+  line-height: 1.2em;
+}
+
+
+
+div#paper
+{
+  background: silver;
+  width:100%;
+  margin: 5em auto;
+  padding: 16px;
+  max-width: 680px;
+  font-size: $font-size;
+
+  header
+  {
+    table.meta
+    {
+      width:100%;
+
+      tr
+      {
+        line-height: 1.2em;
+
+        td:last-child
+        {
+          text-align: right;
+        }
+      }
+    }
+    h1
+    {
+      font-size: 2.4em;
+      display: block;
+      color: $h1;
+
+      small
+      {
+        display: block;
+        font-size: 0.5em;
+      }
+    }
+    img
+    {
+      display: flex;
+      margin: 7em auto;
+      width: 90%;
+    }
+  }/* Header ending */
+
+
+
+}
+
+div#tableOfContents
+{
+  ol
+  {
+    counter-reset: section;
+    content: counters(section, ".") " ";
+
+    li
+    {
+      font-size: 1.35em;
+
+      ol
+      {
+        li
+        {
+          font-size: 0.85em;
+          line-height: 1.35em;
+
+          &:before
+          {
+            counter-increment: section;
+            content: counters(section, ".") " ............................................................................. ";
+          }
+        }
+      }
+
+      &:before
+      {
+        counter-increment: section;
+        content: counters(section, ".") ". ";
+      }
+    }
+  }
+}
+/*
+
+  span
+  {
+    margin: 2.2em 0 0.8em 0;
+    line-height: 1.5em;
+    font-size: 1.5em;
+    border-bottom: 1px solid;
+    &:before{
+      content: " ";
+    }
+    &::first-letter {
+      font-size: 1.25em;
+    }
+  }
+}
+
+ */

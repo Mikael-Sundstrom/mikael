@@ -55,13 +55,18 @@
   },
   "defaults": {
     "styleExt": "scss",
+    "component": {
+      "spec": false,
+      "inlineStyle": true,
+      "inlineTemplate": true
+    },
+    "directive": {
+      "spec": false
+    },
     "class": {
       "spec": false
     },
-    "component": {
-      "spec": false
-    },
-    "directive": {
+    "guard": {
       "spec": false
     },
     "module": {
@@ -72,6 +77,6 @@
     },
     "service": {
       "spec": false
-    }
+    } 
   }
 }
