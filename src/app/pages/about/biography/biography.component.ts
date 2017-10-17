@@ -4,13 +4,7 @@ import { routerTransition } from '../../../shared/animations/router-animation';
 @Component({
   selector: 'app-biography',
   templateUrl: './biography.component.html',
-  styles: [`
-    div.content {
-      max-width: 840px;
-      margin: auto;
-      padding: 16px 8px 0 8px;
-    }
-  `],
+  styles: [],
   animations: [routerTransition()]
 })
 export class BiographyComponent implements OnInit {

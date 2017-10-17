@@ -1,9 +1,15 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+
+/* Pages */
 import { Error404Component } from './pages/error404/error404.component';
-import { BloggerComponent } from './pages/blogger/blogger.component';
+/* About */
 import { AboutComponent } from './pages/about/about.component';
 import { BiographyComponent } from './pages/about/biography/biography.component';
+import { CvComponent } from './pages/about/cv/cv.component';
+/* Blogger */
+import { BloggerComponent } from './pages/blogger/blogger.component';
+import { BloggerFeedComponent } from './pages/blogger/blogger-feed/blogger-feed.component';
 
 const routes: Routes = [
   {
@@ -18,11 +24,11 @@ const routes: Routes = [
         path: 'bio',
         component: BiographyComponent
       },
-      /* {
+      {
         path: 'cv',
         component: CvComponent
       },
-      {
+      /* {
         path: 'arbete',
         component: WorkComponent
       }, */
@@ -36,7 +42,18 @@ const routes: Routes = [
   },
   {
     path: 'blogg',
-    children: [],
+    children: [
+      {
+        path: 'feed',
+        children: [],
+        component: BloggerFeedComponent
+      },
+      {
+        path: '**',
+        children: [],
+        component: Error404Component
+      }
+    ],
     component: BloggerComponent
   },
   {

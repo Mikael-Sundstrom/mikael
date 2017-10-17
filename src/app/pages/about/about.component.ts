@@ -3,9 +3,9 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-about',
   template: `
-    <nav color="primary" md-tab-nav-bar style="background:#ffffff;">
-      <a md-tab-link *ngFor="let tab of tabs" [routerLink]="tab.path" routerLinkActive #rla="routerLinkActive" [active]="rla.isActive">
-        <md-icon>{{ tab.icon }}</md-icon> &nbsp; {{tab.label}}
+    <nav color="primary" mat-tab-nav-bar style="background:#ffffff;">
+      <a mat-tab-link *ngFor="let tab of tabs" [routerLink]="tab.path" routerLinkActive #rla="routerLinkActive" [active]="rla.isActive">
+        <mat-icon>{{ tab.icon }}</mat-icon> &nbsp; {{tab.label}}
       </a>
     </nav>
     <router-outlet></router-outlet>

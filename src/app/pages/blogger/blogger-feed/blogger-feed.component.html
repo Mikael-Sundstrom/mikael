@@ -1,0 +1,24 @@
+<div class="content" *ngFor="let item of data?.items">
+  <mat-card>
+    <mat-card-title>{{item.title}}</mat-card-title>
+    <mat-card-subtitle>Publicerad {{item.updated | date:'y-MM-dd'}}</mat-card-subtitle>
+    <br>
+    <div [innerHTML]="item.content"></div>
+    <br>
+    <mat-chip-list>
+      <div *ngFor="let label of item?.labels" style="font-family: 'Roboto', Arial, Helvetica, sans-serif;">
+        <mat-chip>{{label}}</mat-chip>&nbsp;
+      </div>
+    </mat-chip-list>
+    <br>
+    <button mat-raised-button>
+      Gilla
+    </button>
+    <button mat-raised-button>
+      Kommentera
+    </button>
+    <br>
+  </mat-card>
+</div>
+<br>
+<br>
