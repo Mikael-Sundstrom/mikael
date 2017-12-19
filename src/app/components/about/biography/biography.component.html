@@ -1,0 +1,30 @@
+<!-- <div *ngFor="let note of notes | async">
+    {{ note | json }}
+    <br>
+</div> -->
+<div class="content" *ngFor="let item of about | async">
+    <br>
+    <mat-card>
+        <mat-card-title>
+            {{item.title}}
+        </mat-card-title>
+        <mat-card-header>
+            <img mat-card-avatar [src]="item.avatar">
+            <mat-card-title>
+                Mikael Sundström
+            </mat-card-title>
+            <mat-card-subtitle>
+                Subtitle
+            </mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content [innerHTML]="item.content">
+            <p>Hej!</p>
+            <p>16 år efter Adolf Hitlers död (1961), beslutade den östtyska regeringen sig för att bygga berlinmuren p.g.a. ekonomiska och politiska skäl. Syftet var att man skulle stoppa massutvandringen från öst till väst, då många av utvandrarna var högutbildade människor- läkare, lärare, ingenjörer, tekniker med mera. Följderna vara inte bara kännbara för östberlin, utan också för västberlin då många ungdomar valde att flytta från Östttyskland till Västtyskland, vilket orsakade en föråldrad befolkning i Östttyskland.</p>
+            <p>En mer intressant blev det 28 år senare (1989), lika gammal som jag är nu när jag skriver detta. Bara jag, mig själv- och jag - föddes mitt i universum. Det enorma egot. Jag är och jag kommer att alltid vara det inte någon är, mitt namn är Mikael.</p>
+            <p>men något större hände det året: Jag föddes i Sundsvall som sista/yngsta barn i familjen. Jag heter Mikael och är född samma år som berlinmuren revs ner, närmare bestämt 1989. Jag växte upp i Sundsvall komun Jag har ett stort intresse för fotboll och jag följer ofta Premier League. Jag spelade själv fotboll när jag var yngre, men numera har jag fått ett stort intresse för psykologi, och gräver gärna ner mig i djupa psykoanalyser om hur människor- och djur är som art.</p>
+            <p>På fritiden är jag mest hemma för mig själv, och programmerar allt från konsolprogram till hemsidor på internet. Det är ett intresse jag fått som låter mig vara kreativ utan gränser. Jag brukar jämföra det med att bygga lego när man var barn. Jag har också kvalificerat mig in i Mensa Sverige, vilket jag valde att göra för att utmärka mig från mängden när jag söker jobb.</p>
+            <p>Som person är jag lugn, och innovativ och jag lyssnar hellre på andra, än att prata själv. Jag har inte ett stort behov av att synas. Jag går ofta på intuition och jag är inte speciellt impulsiv av mig. Jag vet oftast vad jag vill och jag är inte lättpåverkad av omgivningen. Jag är en väldigt tänkande person som söker förståelse för hur saker och ting fungerar. Jag brukar inte nöja mig med halvdana förklaringar, utan söker kritiskt efter svar. Jag är oberoende, och jobbar fast beslutet efter förbättringar.</p>
+        </mat-card-content>
+    </mat-card>
+</div>
+<!-- När jag var yngre spelade jag själv fotboll och andra sporter, men numera har jag utvecklat ett stort intresse inom psykologi, och gräver gärna ner mig i djupa psykoanalyser om hur människor- och djur är som art. Jag tycker om att utvecklas både på ett socialt plan men också en personlig utveckling i yrkesrelaterade kompetenser. Utöver det har jag också kvalificerat mig in i Mensa Sverige, vilket jag valde att göra för att utmärka mig från mängden när jag söker jobb. Som person är jag lugn, och innovativ och jag tenderar att lyssna mer på andra, än att prata själv. Jag tror att det är en positiv egenskap i yrket som tågvärd då man kan bli bemött av både glada och arga kunder. Analytisk och intuition är andra ord som beskriver mig och min personlighet, vilket leder till att jag är en tänkande person och som inte påverkas speciellt lätt av omgivningens påtryckningar. -->

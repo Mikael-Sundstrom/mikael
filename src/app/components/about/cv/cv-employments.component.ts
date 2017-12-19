@@ -14,12 +14,12 @@ import { Component, OnInit } from '@angular/core';
           </mat-panel-title>
           <mat-panel-description style="flex-basis:0;justify-content:space-between;align-items: center;">
             {{employment.work.field}}
-            <span>{{employment.work.start|date:'y MMM'|titlecase}} &mdash; {{employment.work.end | date:'y MMM' | titlecase}}</span>
+            <span>{{employment.work.start}} &mdash; {{employment.work.end}}</span>
           </mat-panel-description>
         </mat-expansion-panel-header>
 
         <p>{{employment.work.description}}</p>
-        
+
         <mat-action-row>
         <div *ngIf="first === false;">
           <button mat-button color="warn" (click)="prevStep()">Tillbaka</button>
@@ -55,8 +55,8 @@ export class CvEmploymentsComponent implements OnInit {
         city: 'Timrå',
         field: 'Administratör',
         description: 'Kontorsarbete i samband med arbetsrehabilitering efter långtidssjukskrivning. Fick skriva policyer, och förbereda företaget till kvalitetsledningssystem ISO 9001. Väldigt mycket Excelarbete.',
-        start: new Date('2014-09'),
-        end: new Date('2015-03')
+        start: '2014-09',
+        end: '2015-03'
       }
     },
     {
@@ -66,8 +66,8 @@ export class CvEmploymentsComponent implements OnInit {
         city: 'Sundsvall',
         field: 'Lagerarbetare',
         description: 'Jag sommarjobbade på lagret för Hjertmans e-handel verksamhet tre år i rad. Jag fick ta emot leveranser, och sända till kunder. Hjälpte också kunder i den lokala butiken.',
-        start: new Date('2012-04'),
-        end: new Date('2012-09')
+        start: '2012-04',
+        end: '2012-09'
       }
     },
     {
@@ -77,8 +77,8 @@ export class CvEmploymentsComponent implements OnInit {
         city: 'Sundsvall',
         field: 'Elektriker',
         description: 'Elektrikerarbete upp till 400 V. Vi var tre anställda elektriker på Sidsjöområdet, och det var för mesta dels renoveringsarbete. Jag var med i bygget av Sidsjö vårdcentral.',
-        start: new Date('2011-04'),
-        end: new Date('2012-03')
+        start: '2011-04',
+        end: '2012-03'
       }
     }
   ]

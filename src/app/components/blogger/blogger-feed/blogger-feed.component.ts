@@ -1,7 +1,7 @@
 import { Component, OnInit, HostBinding } from '@angular/core';
 import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { JsonPipe, DatePipe } from '@angular/common';
-import { routerTransition } from '../../../shared/animations/router-animation';
+import { routerTransition } from '../../../core/router.animation';
 
 interface UserResponse {
   apiKey: string;

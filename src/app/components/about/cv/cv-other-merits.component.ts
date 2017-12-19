@@ -11,7 +11,7 @@ import { Component, OnInit } from '@angular/core';
           <h4 mat-line>
             {{other.merit.title}}
           </h4>
-          <p mat-line> {{other.merit.date | date}} </p>
+          <p mat-line> {{other.merit.date}} </p>
         </mat-list-item>
       </mat-list>
     </mat-card>

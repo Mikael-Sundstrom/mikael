@@ -1,97 +1,88 @@
-/* You can add global styles to this file, and also import other style files */
 @import "./assets/styles/theme";
-
 @font-face {
-  font-family: 'Roboto';
-  src: url("./assets/fonts/RobotoRegular.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
+    font-family: 'Roboto';
+    src: url("./assets/fonts/RobotoRegular.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: 'Roboto Slab';
-  src: url("./assets/fonts/RobotoSlabRegular.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
+    font-family: 'Roboto Slab';
+    src: url("./assets/fonts/RobotoSlabRegular.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: 'Roboto Condensed';
-  src: url("./assets/fonts/RobotoCondensedRegular.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
+    font-family: 'Roboto Condensed';
+    src: url("./assets/fonts/RobotoCondensedRegular.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: 'Roboto Mono';
-  src: url("./assets/fonts/RobotoMonoRegular.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
+    font-family: 'Roboto Mono';
+    src: url("./assets/fonts/RobotoMonoRegular.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
 }
 
 html {
-  font-family: 'Roboto', "Helvetica Neue", sans-serif;
+    font-family: 'Roboto', "Helvetica Neue", sans-serif;
 }
 
 body {
-  margin: 0;
-  padding: 0;
-  background-color: #fafafa;
+    margin: 0;
+    padding: 0;
+    background-color: #fafafa;
+    overflow-y: scroll;
 }
 
-h1, h2, h3, h4, h5, h6
-{
-  margin: 0.5em 0;
-  font-weight: 100;
-  color: mat-color($primary);;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0.5em 0;
+    font-weight: 100;
+    color: mat-color($primary);
 }
 
-h1
-{
-  margin: 2.2em 0 0.8em 0;
-  font-size: 2em;
-  border-bottom: 1px solid;
-
-  &::first-letter
-  {
-    font-size: 1.25em;
-  }
+h1 {
+    margin: 2.2em 0 0.8em 0;
+    font-size: 2em;
+    border-bottom: 1px solid;
+    &::first-letter {
+        font-size: 1.25em;
+    }
 }
 
-h2
-{
-  font-size: 1.75em;
-  border-bottom: 1px solid;
-
-  &::first-letter
-  {
-    font-size: 1.25em;
-  }
+h2 {
+    font-size: 1.75em;
+    border-bottom: 1px solid;
+    &::first-letter {
+        font-size: 1.25em;
+    }
 }
 
-h3
-{
-  font-size: 1.35em;
-  
-  &::first-letter
-  {
-    font-size: 1.25em;
-  }
+h3 {
+    font-size: 1.35em;
+    &::first-letter {
+        font-size: 1.25em;
+    }
 }
 
-
-p
-{
-  margin-bottom: 0.75em;
-  font-family: 'Roboto Slab', 'Times New Roman', Times, serif;
-  color: #666;
-  text-align: justify;
-  line-height: 1.4em;
+p {
+    margin-bottom: 0.75em;
+    font-family: 'Roboto Slab', 'Times New Roman', Times, serif;
+    color: #666;
+    text-align: justify;
+    line-height: 1.4em;
 }
 
-div.content
-{
-  max-width: 840px;
-  margin: auto;
-  padding: 16px 8px 0 8px;
+div.content {
+    max-width: 840px;
+    margin: auto;
+    padding: 16px 8px 0 8px;
 }

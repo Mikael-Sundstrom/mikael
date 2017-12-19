@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Pipe, PipeTransform } from '@angular/core';
 
 @Component({
   selector: 'app-cv-educations',
@@ -14,7 +15,7 @@ import { Component, OnInit } from '@angular/core';
           </mat-panel-title>
           <mat-panel-description style="flex-basis:0;justify-content:space-between;align-items: center;">
             {{education.school.type}}
-            <span>{{education.school.start|date:'y MMM'|titlecase}} &mdash; {{education.school.end | date:'y MMM' | titlecase}}</span>
+            <span>{{education.school.start}} &mdash; {{education.school.end}}</span>
           </mat-panel-description>
         </mat-expansion-panel-header>
 
@@ -31,7 +32,7 @@ import { Component, OnInit } from '@angular/core';
             <button mat-button color="primary" (click)="nextStep()">Stäng</button>
           </div>
         </mat-action-row>
-        
+
 
       </mat-expansion-panel>
     </mat-accordion>
@@ -58,8 +59,8 @@ export class CvEducationsComponent implements OnInit {
         type: 'Gymnasieskola',
         field: 'Elinstallation',
         description: 'Lorem ipsum dolor',
-        start: new Date('2005-09'),
-        end: new Date('2009-01')
+        start: '2005-09',
+        end: '2009-01'
       }
     },
     {
@@ -70,8 +71,8 @@ export class CvEducationsComponent implements OnInit {
         type: 'Grundskola',
         field: 'Grund',
         description: 'Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor ',
-        start: new Date('1995-09'),
-        end: new Date('2004-06')
+        start: '1995-09',
+        end: '2004-06'
       }
     }
   ]

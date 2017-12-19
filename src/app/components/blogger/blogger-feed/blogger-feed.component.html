@@ -1,7 +1,10 @@
 <div class="content" *ngFor="let item of data?.items">
+  <br>
+  <br>
   <mat-card>
     <mat-card-title>{{item.title}}</mat-card-title>
-    <mat-card-subtitle>Publicerad {{item.updated | date:'y-MM-dd'}}</mat-card-subtitle>
+    <!--  | date:'y-MM-dd' -->
+    <mat-card-subtitle>Publicerad {{item.updated}}</mat-card-subtitle>
     <br>
     <div [innerHTML]="item.content"></div>
     <br>

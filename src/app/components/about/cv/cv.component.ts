@@ -1,10 +1,12 @@
 import { Component, HostBinding } from '@angular/core';
-import { routerTransition } from '../../../shared/animations/router-animation';
+import { routerTransition } from '../../../core/router.animation';
 
 @Component({
   selector: 'app-cv',
   template: `
     <div class="content">
+    <br>
+    <br>
       <app-cv-employments></app-cv-employments>
       <br>
       <br>

@@ -2,14 +2,15 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 /* Pages */
-import { Error404Component } from './pages/error404/error404.component';
+import { Error404Component } from './components/error404/error404.component';
 /* About */
-import { AboutComponent } from './pages/about/about.component';
-import { BiographyComponent } from './pages/about/biography/biography.component';
-import { CvComponent } from './pages/about/cv/cv.component';
+import { AboutComponent } from './components/about/about.component';
+import { BiographyComponent } from './components/about/biography/biography.component';
+import { CvComponent } from './components/about/cv/cv.component';
 /* Blogger */
-import { BloggerComponent } from './pages/blogger/blogger.component';
-import { BloggerFeedComponent } from './pages/blogger/blogger-feed/blogger-feed.component';
+import { BloggerComponent } from './components/blogger/blogger.component';
+import { BloggerFeedComponent } from './components/blogger/blogger-feed/blogger-feed.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 const routes: Routes = [
   {
@@ -55,6 +56,11 @@ const routes: Routes = [
       }
     ],
     component: BloggerComponent
+  },
+  {
+    path: 'docs',
+    children: [],
+    component: FooterComponent
   },
   {
     path: '**',
